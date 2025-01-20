@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <div id="construction-banner">
-        <p>This site is still under construction!</p>
-    </div>
+    <!--<div id="construction-banner">-->
+    <!--    <p>This site is still under construction!</p>-->
+    <!--</div>-->
     
     <nav id="desktop-nav">
         <div class="logo">Jeanni Martin</div>
@@ -25,23 +25,23 @@
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Jeanni Martin</div>
-        <div class="hamburger-menu">
+        <div class="hamburger-menu" >
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#certifications" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <div class="menu-links" onclick="toggleMenu()">
+                <li><a href="#about" >About</a></li>
+                <li><a href="#projects" >Projects</a></li>
+                <li><a href="#experience" >Experience</a></li>
+                <li><a href="#contact" >Contact</a></li>
             </div>
         </div>
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Jeanni Martin profile picture">
+            <img src="./assets/profile-pic.png" class="profile-pic"  alt="Jeanni Martin profile picture">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -165,7 +165,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="details-container">
+                <div id="certifications" class="details-container">
                     <h2 class="experience-sub-title">Cybersecurity Student</h2>
                     <div class="article-container">
                         <article>

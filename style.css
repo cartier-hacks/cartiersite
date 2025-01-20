@@ -10,6 +10,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.profile-pic {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -174,6 +180,7 @@ min-height: fit-content;
 .section__text {
     align-self: center;
     text-align: center;
+    padding-top: 20px;
 }
 
 .section__text p {
@@ -446,6 +453,7 @@ footer {
 footer p {
     text-align: center;
 }
+
 
 /* BANNER */
 

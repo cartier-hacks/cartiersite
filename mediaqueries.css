@@ -41,22 +41,37 @@
 }
 
 @media screen and (max-width: 600px) {
-    #contact, footer{
+    #contact{
         height: 40vh;
     }
     #profile {
-        height: 83vh;
         margin-bottom: 0;
+        height: auto;
     }
     article {
         font-size: 1rem;
     }
     footer nav {
         height: fit-content;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
+        height: auto;
     }
+
+
+    .article-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Creates 2 equal columns */
+      gap: 5px; /* Adds a 20px gap between grid items */
+    }
+
+    body {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .about-containers, .contact-info-upper-container, .btn-container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
     }
     .contact-info-container {
         margin: 0;
@@ -75,10 +90,8 @@
         gap: 0.5rem;
         text-align: center;
     }
-    .section__pic-container {
-        width: auto;
-        height: 46vw;
-        justify-content: center;
+    .section__text {
+        padding: 20px 0;
     }
     .section__text__p2 {
         font-size: 1.25rem;
